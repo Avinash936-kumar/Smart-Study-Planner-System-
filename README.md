@@ -1,82 +1,90 @@
-# Smart Study Planner
+# 🎓 Smart Study Planner v2 — "Student Life OS"
 
-A full-stack, production-ready MERN productivity application designed for students to manage their academic life.
+A premium, all-in-one productivity operating system designed for students. Built with the MERN stack (MongoDB, Express, React, Node), featuring a stunning Bento-grid dashboard, AI-powered scheduling, and academic lifestyle tracking.
 
-![Dashboard Preview](https://via.placeholder.com/1200x600/6366f1/ffffff?text=Smart+Study+Planner+Dashboard)
+![Dashboard Preview](https://via.placeholder.com/1200x600/6366f1/ffffff?text=Smart+Study+Planner+v2+Student+OS)
 
-## 🌟 Features
+## 🌟 Key Features (v2)
 
-- **Smart Dashboard**: Comprehensive overview with real-time widgets, upcoming deadlines, and motivational quotes.
-- **Task Management**: Advanced CRUD, priority levels, status tracking, and smart scheduling algorithm.
-- **Subjects Tracker**: Organize courses, set study targets, and track completion progress.
-- **Goal Setting**: Weekly and monthly goals with milestone tracking and progress bars.
-- **Exam Planner**: Track exam dates, urgency levels, syllabus completion, and generate AI-driven revision plans.
-- **Daily Routine**: Manage your daily schedule with visual timeline blocks for classes, study, and breaks.
-- **Pomodoro Focus Timer**: Built-in 25/5 focus timer with session history, subject tracking, and productivity charts.
-- **Notes System**: Create, search, and pin important study notes with markdown support.
-- **Analytics Dashboard**: Deep insights into study patterns, completion trends, focus time, and subject priorities.
-- **Profile & Settings**: Manage academic details, study preferences, dark mode, and account settings.
+### 📊 Premium Bento Dashboard
+- **Active Focus Widget**: Your most important task, front and center.
+- **Efficiency Pulse**: Real-time study efficiency visualization.
+- **Quick Toolbox**: Instant access to your Timer, Exams, Revision, and Finance tools.
+- **Academic Risk Alerts**: Smart notifications for attendance drops or upcoming high-priority exams.
 
-## 🛠 Tech Stack
+### 🧠 Academic Intelligence
+- **Spaced Repetition**: Revision system for long-term memory retention.
+- **Syllabus Tracker**: Unit-by-unit breakdown of your courses.
+- **Exam Readiness**: Preparation status tracking with automated syllabus progress.
+- **Attendance Monitor**: Keep track of your class presence with minimum requirement alerts.
 
-- **Frontend**: React 18, Vite, Tailwind CSS 3, React Router DOM, Framer Motion, Recharts
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB & Mongoose (with in-memory fallback)
-- **Authentication**: JWT, bcryptjs
+### 🛠️ Utilities & Tools
+- **Budget Planner**: Track your monthly student expenses and limits.
+- **Study Groups**: Create and manage groups with shared tasks.
+- **Resource Vault**: Upload and categorize your study materials.
+- **Focus Timer**: High-end Pomodoro timer with detailed productivity analytics.
 
-## 🚀 Getting Started
+---
 
-### Prerequisites
-- Node.js (v16 or higher)
-- MongoDB (local or Atlas URI)
+## 🚀 Installation & Setup Guide
 
-### Installation
+Share these steps with your friends to get the app running in minutes!
 
-1. **Clone the repository**
+### 📋 Prerequisites
+- **Node.js** (v18 or higher recommended)
+- **MongoDB** (Local Community Server installed)
+
+### 🛠️ Step-by-Step Installation
+
+1. **Clone the Project**
    ```bash
-   git clone <repo-url>
-   cd "smart study"
+   git clone https://github.com/Avinash936-kumar/Smart-Study-Planner-System-.git
+   cd Smart-Study-Planner-System-
    ```
 
-2. **Setup Backend**
+2. **Backend Setup**
    ```bash
    cd server
    npm install
-   # Create a .env file based on .env.example
-   npm run seed # (Optional) Seed the database with demo data
-   npm run dev  # Starts backend on http://localhost:5000
+   # The .env is already configured for local use, but you can edit it if needed.
+   
+   # Run this to get all the demo data (Tasks, Subjects, etc.)
+   node seed.js 
+   
+   # Start the server
+   npm run dev
    ```
 
-3. **Setup Frontend**
+3. **Frontend Setup**
+   *Open a new terminal window*
    ```bash
    cd client
    npm install
-   npm run dev  # Starts frontend on http://localhost:5173
+   npm run dev
    ```
 
-## 📚 API Endpoints
+4. **Access the App**
+   - Open your browser and go to: **[http://localhost:5173](http://localhost:5173)**
 
-- **Auth**: `/api/auth/register`, `/login`, `/profile`, `/account`
-- **Tasks**: `/api/tasks`, `/api/tasks/stats`, `/api/tasks/schedule`, `/bulk-status`, `/bulk-delete`
-- **Subjects**: `/api/subjects`
-- **Goals**: `/api/goals`
-- **Exams**: `/api/exams`, `/api/exams/:id/revision-plan`
-- **Routine**: `/api/routine`, `/api/routine/score`
-- **Focus**: `/api/focus`, `/api/focus/stats`
-- **Notes**: `/api/notes`, `/api/notes/:id/pin`
+---
 
-## 🎨 UI/UX Design
+## 📧 Demo Login (Use this to explore!)
+Don't want to create a new account? Use our pre-filled demo account:
+- **Email**: `demo@studyplanner.com`
+- **Password**: `password123`
 
-The application features a modern SaaS aesthetic with:
-- **Glassmorphism**: Translucent cards and panels.
-- **Gradients**: Custom `primary` and `accent` gradient flows.
-- **Animations**: Smooth page transitions and micro-interactions via Framer Motion.
-- **Dark Mode**: Fully supported, accessible dark theme.
+---
+
+## 🛠 Tech Stack
+- **Frontend**: React 18, Vite, Tailwind CSS, Framer Motion (Animations), Recharts (Analytics).
+- **Backend**: Node.js, Express.js, JWT Authentication.
+- **Database**: MongoDB (Mongoose).
+- **Security**: Helmet, Rate Limiting, Mongo Sanitize.
+
+---
 
 ## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
+Feel free to fork this project, open issues, and submit pull requests to make the Student OS even better!
 
 ## 📝 License
-
 This project is licensed under the MIT License.
