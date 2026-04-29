@@ -1,0 +1,12 @@
+const express = require('express');
+const { getRoutineBlocks, createRoutineBlock, updateRoutineBlock, deleteRoutineBlock, toggleRoutineBlock, getDailyScore } = require('../controllers/routineController');
+const { protect } = require('../middleware/auth');
+const router = express.Router();
+router.use(protect);
+router.get('/score', getDailyScore);
+router.get('/', getRoutineBlocks);
+router.post('/', createRoutineBlock);
+router.put('/:id', updateRoutineBlock);
+router.delete('/:id', deleteRoutineBlock);
+router.patch('/:id/toggle', toggleRoutineBlock);
+module.exports = router;

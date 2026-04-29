@@ -1,0 +1,11 @@
+const express = require('express');
+const { getExams, createExam, updateExam, deleteExam, generateRevisionPlan } = require('../controllers/examController');
+const { protect } = require('../middleware/auth');
+const router = express.Router();
+router.use(protect);
+router.get('/', getExams);
+router.post('/', createExam);
+router.put('/:id', updateExam);
+router.delete('/:id', deleteExam);
+router.post('/:id/revision-plan', generateRevisionPlan);
+module.exports = router;
