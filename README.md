@@ -46,7 +46,9 @@ Share these steps with your friends to get the app running in minutes!
    ```bash
    cd server
    npm install
-   # The .env is already configured for local use, but you can edit it if needed.
+   
+   # IMPORTANT: Create your environment file
+   cp .env.example .env  # or manually copy .env.example to .env
    
    # Run this to get all the demo data (Tasks, Subjects, etc.)
    node seed.js 
